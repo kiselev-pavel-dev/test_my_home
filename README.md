@@ -40,6 +40,74 @@ python manage.py createsuperuser
 
 Ендпоинт: _http://127.0.0.1:8000/api/entities/_ 
 
+Примеры запросов и ответов:
+
+###
+
+POST http://127.0.0.1:8000/api/entities/
+Content-Type: application/json
+Authorization: Token _Ваш_Токен_
+
+{
+    "data[value]": 123
+}
+
+{
+  "entity": {
+    "id": 14,
+    "modified_by": 1,
+    "value": 123,
+    "properties": []
+  }
+}
+
+###
+GET http://127.0.0.1:8000/api/entities/
+Content-Type: application/json
+Authorization: Token _Ваш_Токен_
+
+[
+  {
+    "value": 12,
+    "properties": {
+      "center": "100, 100",
+      "radius": "50"
+    }
+  },
+  {
+    "value": 13,
+    "properties": {
+      "start": "150, 50",
+      "end": "50, 150"
+    }
+  },
+  {
+    "value": 14,
+    "properties": {
+      "класс": "Млекопитающие"
+    }
+  },
+  {
+    "value": 15,
+    "properties": {
+      "corner_1": "50, 50",
+      "corner_2": "150, 150"
+    }
+  },
+  {
+    "value": 50,
+    "properties": {}
+  },
+  {
+    "value": 50,
+    "properties": {}
+  },
+  {
+    "value": 123,
+    "properties": {}
+  }
+]
+
 
 
 ### <br /> Автор проекта:
