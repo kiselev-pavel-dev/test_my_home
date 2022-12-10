@@ -41,9 +41,8 @@ python manage.py createsuperuser
 Ендпоинт: _http://127.0.0.1:8000/api/entities/_ 
 
 Примеры запросов и ответов:
-
+```
 ###
-
 POST http://127.0.0.1:8000/api/entities/
 Content-Type: application/json
 Authorization: Token _Ваш_Токен_
@@ -107,7 +106,7 @@ Authorization: Token _Ваш_Токен_
     "properties": {}
   }
 ]
-
+```
 
 
 ### <br /> Автор проекта:
